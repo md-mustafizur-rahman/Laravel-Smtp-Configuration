@@ -1,3 +1,5 @@
+step 1:
+
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.hostinger.com
 MAIL_PORT=465
@@ -6,3 +8,24 @@ MAIL_PASSWORD=enter your password
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS="enter your mail"
 MAIL_FROM_NAME="${APP_NAME}"
+
+
+if your mail is webmail then step 2 will be continue other wise none
+step 2 :
+
+go to config derectory of your lararvel project and open mail.php.
+
+step 3:
+changle smtp to mail
+
+    'mailers' => [
+        'smtp' => [
+            'transport' => 'mail',
+            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'port' => env('MAIL_PORT', 587),
+            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
+            'timeout' => null,
+            'local_domain' => env('MAIL_EHLO_DOMAIN'),
+        ],
