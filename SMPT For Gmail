@@ -1,0 +1,9 @@
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=enter your gmail
+MAIL_PASSWORD=enter your gmail password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="enter your gmail name"
+MAIL_FROM_NAME="${APP_NAME}"
